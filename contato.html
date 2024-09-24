@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="contato.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+<body>
+    <header>
+        <img src="fotos projeto/logo.png" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="trabalhos.html">Trabalhos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <div class="search-box">
+                <input class="search-txt" type="text" placeholder="Pesquisar">
+                <a class="search-btn" href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+        </nav>
+        <div class="avatar-container">
+            <img src="icons/avatar.jfif" alt="Avatar">
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="fotos projeto/ni.jfif" alt="Imagem Grande">
+            <h1 class="hero-title">Contate-nos!</h1>
+        </section>
+
+        <div class="form-wrapper">
+            <div class="image-container">
+                <img src="fotos projeto/smiley face.jfif" alt="Imagem Pequena">
+            </div>
+            <div class="form-container">
+                <form id="feedbackForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" id="sobrenome" name="sobrenome" placeholder="Seu sobrenome" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Seu email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="Seu telefone">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+        <script>
+            document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Impede o envio padrão do formulário
+                alert('Obrigada pelo feedback!');
+                // Aqui você pode adicionar código para enviar os dados do formulário se necessário
+            });
+        </script>
+
+        <div class="gradiente"></div> 
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+            <img src="fotos projeto/logo.png" alt="logo">
+            </div>
+            <div>
+            <p>Galeria de Arte</p>
+            <ul class="footer-links">
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            </div>
+            <div>
+            <p>Exposições</p>
+            <ul class="footer-links">
+                <li><a href="trabalhos.html">Fotos</a></li>
+                <li><a href="trabalhos.html">Vídeos</a></li>
+                <li><a href="trabalhos.html">Áudios</a></li>
+            </ul>
+            </div>
+            <div>
+            <p>Contato</p>
+            <ul class="footer-links">
+                <li><a href="#">(18) 996453528</a></li>
+                <li><a href="#">liviacfeliciano2007@gmail.com</a></li>
+            </ul>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/livia.cairesfeliciano" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://open.spotify.com/user/31n7eu6kserzskczfgbnemxmi7lu?si=5c9e7515740d4e31" class="social-icon">
+                    <i class="fab fa-spotify"></i>
+                </a>
+                <a href="https://www.instagram.com/liviafelic/" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/@liviacaires3929" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://pin.it/7a8OHIsRI" class="social-icon">
+                    <i class="fab fa-pinterest"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
